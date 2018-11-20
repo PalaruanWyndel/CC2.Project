@@ -1,0 +1,49 @@
+package FLIPTOP;
+
+import java.util.Scanner;
+public class SidAndWyndel {
+    public static void main(String[] args){
+    double hello, hi;
+        Scanner Avengers = new Scanner(System.in);
+      System.out.println("Enter first amount");  
+        
+      hello = Avengers.nextDouble();
+        System.out.println("Enter second amount");
+      hi = Avengers.nextDouble();
+      
+      System.out.println("Enter an operator");
+      String operator = Avengers.next();
+      Avengers.close();
+      double output = 0;
+      
+      switch(operator)
+      {
+       
+          case "add":
+          case "+":
+              output = hello + hi;
+              break;
+          
+          case "subtract" :
+              case"-" :
+              output = hello - hi;
+              break;
+              
+          case "divide, / " :
+              case"/" :
+              output = hello / hi;
+              break;
+              
+          case "multiply, * " :
+              case"*":
+              output = hello * hi;
+              break;
+          
+          default :
+              System.out.println("You are wrong");
+              return;
+      
+      }System.out.println(hello+" "+operator+" "+hi+": "+output );     
+    
+    }
+}
